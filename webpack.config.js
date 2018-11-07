@@ -1,6 +1,7 @@
 const path = require('path');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 
+const { developmentURL } = require('./config');
 const filesToWatch = ['./*.php', './dist/*.js', './dist/*.css'];
 
 module.exports = {
@@ -35,7 +36,7 @@ module.exports = {
       host: 'localhost',
       port: 3000,
       files: filesToWatch,
-      proxy: 'http://vagrant.host',
+      proxy: developmentURL,
     }),
   ],
 };
