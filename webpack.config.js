@@ -1,15 +1,15 @@
-const path = require("path");
-const BrowserSyncPlugin = require("browser-sync-webpack-plugin");
+const path = require('path');
+const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 
-const filesToWatch = ["./*.php", "./dist/*.js", "./dist/*.css"];
+const filesToWatch = ['./*.php', './dist/*.js', './dist/*.css'];
 
 module.exports = {
-  mode: "development",
-  entry: "./src/js/index.js",
+  mode: 'development',
+  entry: './src/js/index.js',
   output: {
-    path: path.resolve(__dirname, "dist"),
-    filename: "index.bundle.js",
-    publicPath: "/dist"
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'index.bundle.js',
+    publicPath: '/dist',
   },
   module: {
     rules: [
@@ -17,20 +17,25 @@ module.exports = {
         test: /\.m?js$/,
         exclude: /(node_modules|bower_components)/,
         use: {
-          loader: "babel-loader",
+          loader: 'babel-loader',
           options: {
-            presets: ["@babel/preset-env"]
-          }
-        }
-      }
-    ]
+            presets: ['@babel/preset-env'],
+          },
+        },
+      },
+    ],
+  },
+  resolve: {
+    alias: {
+      vue: 'vue/dist/vue.js',
+    },
   },
   plugins: [
     new BrowserSyncPlugin({
-      host: "localhost",
+      host: 'localhost',
       port: 3000,
       files: filesToWatch,
-      proxy: "http://vagrant.host"
-    })
-  ]
+      proxy: 'http://vagrant.host',
+    }),
+  ],
 };
