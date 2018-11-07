@@ -1,0 +1,39 @@
+{
+  "name": "automatic",
+  "version": "1.0.0",
+  "description": "Underscores using modern build.",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run sass:watch\" \"npm run serve\"",
+    "serve": "webpack --watch --mode=development",
+    "sass:watch": "nodemon -e scss -x \"npm run sass:compile\"",
+    "sass:compile": "node-sass src/styles -o dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Automattic/_s.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Automattic/_s/issues"
+  },
+  "homepage": "https://github.com/Automattic/_s#readme",
+  "devDependencies": {
+    "@babel/core": "^7.1.5",
+    "@babel/preset-env": "^7.1.5",
+    "babel-loader": "^8.0.4",
+    "browser-sync-webpack-plugin": "^2.2.2",
+    "prettier": "1.15.1",
+    "webpack": "^4.25.1",
+    "webpack-cli": "^3.1.2"
+  },
+  "dependencies": {
+    "@webpack-cli/init": "^0.1.2",
+    "browser-sync": "^2.26.3",
+    "concurrently": "^4.0.1",
+    "node-sass": "^4.10.0",
+    "nodemon": "^1.18.6",
+    "replace-in-file": "^3.4.2"
+  }
+}
