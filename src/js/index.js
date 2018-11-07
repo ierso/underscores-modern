@@ -1,1 +1,1 @@
-const testArr = ["hello", "hello again", "cool"];
+const testArr = ['hello', 'hello again', 'cool'];

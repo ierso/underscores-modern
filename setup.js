@@ -18,7 +18,7 @@ function prepareThemeName(names) {
  */
 function renameTheme(names) {
   const options = {
-    files: ['./**/*.php', './assets/build/*.json', './*.css', './*.json'],
+    files: ['./**/*.php', './*.css', './*.json'],
     from: [
       /'_s'/g,
       /_s_/g,
