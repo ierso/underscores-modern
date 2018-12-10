@@ -1,10 +1,9 @@
 import Vue from 'vue';
 
-export const helloWorld = () => {
-  var app = new Vue({
-    el: '#app',
-    data: {
-      message: 'Hello from Vue!',
-    },
-  });
+const helloWorld = {
+  name: 'hello-world',
+  props: ['message'],
+  template: '<h4>This is a test Component {{message}}</h4>',
 };
+
+export default helloWorld;
