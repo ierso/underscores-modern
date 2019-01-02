@@ -1,5 +1,6 @@
 const path = require('path');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
+const VueLoaderPlugin = require('vue-loader/lib/plugin');
 
 const { developmentURL } = require('./config');
 const filesToWatch = ['./*.php', './dist/*.js', './dist/*.css'];
@@ -15,6 +16,10 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.vue$/,
+        loader: 'vue-loader',
+      },
+      {
         test: /\.m?js$/,
         exclude: /(node_modules|bower_components)/,
         use: {
@@ -24,6 +29,10 @@ module.exports = {
           },
         },
       },
+      {
+        test: /\.css$/,
+        use: ['vue-style-loader', 'css-loader'],
+      },
     ],
   },
   resolve: {
@@ -32,6 +41,7 @@ module.exports = {
     },
   },
   plugins: [
+    new VueLoaderPlugin(),
     new BrowserSyncPlugin({
       host: 'localhost',
       port: 3000,

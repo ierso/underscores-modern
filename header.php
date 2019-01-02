@@ -23,9 +23,13 @@
 <body <?php body_class(); ?>>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', '_s' ); ?></a>
-  
+
   <div id="app">
-    <hello-world message="this is a test message" />
+    
+    <hello-world message="world"></hello-world>
+    data
+    <test-comp message="cool"></test-comp>
+    
   </div>
   
 	<header id="masthead" class="site-header">

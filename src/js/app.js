@@ -1,13 +1,12 @@
 import Vue from 'vue';
-import helloWorld from './components/hello-world';
 
-const app = (function() {
+import components from './components';
+
+const app = (() => {
   const init = () => {
     new Vue({
       el: '#app',
-      components: {
-        helloWorld,
-      },
+      components: components,
     });
   };
   return {
