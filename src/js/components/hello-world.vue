@@ -1,5 +1,9 @@
 <template>
-  <div class="example">{{ welcome }} {{ message }}</div>
+  <div class="example">
+    {{ welcome }}
+    {{ message }}
+    <button v-on:click="changeMessage">click</button>
+  </div>
 </template>
 
 <script>
@@ -9,6 +13,11 @@ export default {
     return {
       welcome: 'hello',
     };
+  },
+  methods: {
+    changeMessage: function(event) {
+      console.log('clicked');
+    },
   },
 };
 </script>
