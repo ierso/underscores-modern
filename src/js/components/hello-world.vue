@@ -1,7 +1,7 @@
 <template>
   <div class="example">
     {{ welcome }}
-    {{ message }}
+    {{ todos }}
     <button v-on:click="changeMessage">click</button>
   </div>
 </template>
@@ -13,6 +13,11 @@ export default {
     return {
       welcome: 'hello',
     };
+  },
+  computed: {
+    todos() {
+      return this.$store.getters['todos/getTodos'];
+    },
   },
   methods: {
     changeMessage: function(event) {

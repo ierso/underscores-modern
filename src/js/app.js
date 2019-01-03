@@ -1,12 +1,15 @@
 import Vue from 'vue';
-
+import { store } from './store';
 import components from './components';
+
+console.log(store);
 
 const app = (() => {
   const init = () => {
     new Vue({
       el: '#app',
-      components: components,
+      store,
+      components,
     });
   };
   return {
