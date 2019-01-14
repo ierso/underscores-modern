@@ -3,7 +3,7 @@ import getters from './getters';
 import mutations from './mutations';
 
 const state = {
-  todos: ['todo1', 'todo2', 'todo3'],
+  posts: [],
 };
 
 export default {

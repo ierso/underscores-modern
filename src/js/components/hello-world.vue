@@ -1,27 +1,29 @@
 <template>
-  <div class="example">
-    {{ welcome }}
-    {{ todos }}
-    <button v-on:click="changeMessage">click</button>
+  <div class="posts">
+    <ul>
+      <li v-for="post in posts" :key="post.id">{{ post.title.rendered }}</li>
+    </ul>
   </div>
 </template>
 
 <script>
 export default {
-  props: ['message'],
   data() {
     return {
-      welcome: 'hello',
+      loading: true,
     };
   },
+  created() {
+    this.fetchPosts();
+  },
   computed: {
-    todos() {
-      return this.$store.getters['todos/getTodos'];
+    posts() {
+      return this.$store.getters['posts/getPosts'];
     },
   },
   methods: {
-    changeMessage: function(event) {
-      console.log('clicked');
+    fetchPosts: function() {
+      this.$store.dispatch('posts/setPosts');
     },
   },
 };
