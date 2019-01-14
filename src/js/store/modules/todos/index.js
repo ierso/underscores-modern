@@ -1,9 +1,9 @@
-import actions from "./actions";
-import getters from "./getters";
-import mutations from "./mutations";
+import actions from './actions';
+import getters from './getters';
+import mutations from './mutations';
 
 const state = {
-  todos: ["todo1", "todo2", "todo3"]
+  todos: ['todo1', 'todo2', 'todo3'],
 };
 
 export default {
@@ -11,5 +11,5 @@ export default {
   state,
   actions,
   getters,
-  mutations
+  mutations,
 };

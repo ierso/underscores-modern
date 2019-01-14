@@ -7,5 +7,5 @@ const ADD_TODO = (state, payload) => {
 
 export default {
   SET_TODO,
-  ADD_TODO
+  ADD_TODO,
 };

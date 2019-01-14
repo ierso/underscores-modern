@@ -3,5 +3,5 @@ const getTodos = state => {
 };
 
 export default {
-  getTodos
+  getTodos,
 };
