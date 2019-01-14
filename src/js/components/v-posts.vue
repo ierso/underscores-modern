@@ -1,7 +1,7 @@
 <template>
   <div class="posts">
-    <ul>
-      <li v-if="!posts">Loading...</li>
+    <h2>Posts</h2>
+    <ul class="posts__list">
       <li v-for="post in posts" :key="post.id">{{ post.title.rendered }}</li>
     </ul>
   </div>
@@ -9,11 +9,6 @@
 
 <script>
 export default {
-  data() {
-    return {
-      loading: true,
-    };
-  },
   created() {
     this.fetchPosts();
   },
@@ -33,5 +28,8 @@ export default {
 <style>
 .example {
   color: teal;
+}
+.posts__list {
+  border: red solid 1px;
 }
 </style>
