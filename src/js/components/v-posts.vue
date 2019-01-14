@@ -1,6 +1,7 @@
 <template>
   <div class="posts">
     <ul>
+      <li v-if="!posts">Loading...</li>
       <li v-for="post in posts" :key="post.id">{{ post.title.rendered }}</li>
     </ul>
   </div>

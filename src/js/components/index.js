@@ -1,9 +1,9 @@
-import HelloWorld from './hello-world.vue';
-import testComp from './test-component.vue';
+import vPosts from './v-posts.vue';
+import vTest from './v-test.vue';
 
 const components = {
-  HelloWorld,
-  testComp,
+  vPosts,
+  vTest,
 };
 
 export default components;

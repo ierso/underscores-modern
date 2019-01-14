@@ -19,9 +19,9 @@ get_header();
 		<main id="main" class="site-main">
 
 
-    <hello-world message="world"></hello-world>
+    <v-posts></v-posts>
     data
-    <test-comp message="cool"></test-comp>
+    <v-test message="cool"></v-test>
 
 		<?php
 		while ( have_posts() ) :

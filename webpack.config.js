@@ -6,7 +6,6 @@ const { developmentURL } = require('./config');
 const filesToWatch = ['./*.php', './dist/*.js', './dist/*.css'];
 
 module.exports = {
-  mode: 'development',
   entry: './src/js/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
