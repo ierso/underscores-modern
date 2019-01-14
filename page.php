@@ -18,6 +18,11 @@ get_header();
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
+
+    <hello-world message="world"></hello-world>
+    data
+    <test-comp message="cool"></test-comp>
+
 		<?php
 		while ( have_posts() ) :
 			the_post();
