@@ -18,6 +18,7 @@ get_header();
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
+    <v-search></v-search>
 
     <v-posts></v-posts>
     data
