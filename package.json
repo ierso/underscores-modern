@@ -9,7 +9,7 @@
     "dev": "webpack --watch --mode=development",
     "production": "webpack --watch --mode=production",
     "sass:watch": "nodemon -e scss -x \"npm run sass:compile\"",
-    "sass:compile": "node-sass src/styles -o dist"
+    "sass:compile": "node-sass src/styles -o dist --output-style compressed"
   },
   "repository": {
     "type": "git",
