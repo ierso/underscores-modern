@@ -9,6 +9,13 @@
 
 <script>
 export default {
+  data() {
+    return {
+      postsPerPage: '5',
+      page: '1',
+      order: 'asc',
+    };
+  },
   created() {
     this.fetchPosts();
   },
@@ -19,7 +26,11 @@ export default {
   },
   methods: {
     fetchPosts: function() {
-      this.$store.dispatch('posts/setPosts');
+      this.$store.dispatch('posts/setPosts', {
+        order: this.order,
+        postsPerPage: this.postsPerPage,
+        page: this.page,
+      });
     },
   },
 };
