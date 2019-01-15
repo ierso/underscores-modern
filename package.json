@@ -5,10 +5,11 @@
   "main": "index.js",
   "scripts": {
     "start": "concurrently \"npm run sass:watch\" \"npm run dev\"",
+    "build": "concurrently \"npm run sass:compile\" \"npm run production\"",
     "dev": "webpack --watch --mode=development",
+    "production": "webpack --watch --mode=production",
     "sass:watch": "nodemon -e scss -x \"npm run sass:compile\"",
-    "sass:compile": "node-sass src/styles -o dist",
-    "build": "webpack --watch --mode=production"
+    "sass:compile": "node-sass src/styles -o dist"
   },
   "repository": {
     "type": "git",

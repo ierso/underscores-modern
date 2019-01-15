@@ -22,3 +22,7 @@ Update developmentURL in config.js to your local development url.
 Run `npm install`
 
 Run `npm start` for building and watch.
+
+## Build & production
+
+Run `npm run build` for production build.
