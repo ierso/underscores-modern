@@ -1,6 +1,14 @@
 import '@babel/polyfill';
-import app from './app';
+import Vue from 'vue';
+import { store } from './store';
+import components from './components';
+
+Vue.config.productionTip = false;
 
 window.onload = () => {
-  app.init();
+  const app = new Vue({
+    el: '#app',
+    store,
+    components,
+  });
 };

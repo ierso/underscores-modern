@@ -4,6 +4,8 @@
     <ul class="posts__list">
       <li v-for="post in posts" :key="post.id">{{ post.title.rendered }}</li>
     </ul>
+    <h2>Slugs</h2>
+    <ul class="posts__list">{{slugs}}</ul>
   </div>
 </template>
 
@@ -22,6 +24,9 @@ export default {
   computed: {
     posts() {
       return this.$store.getters['posts/getPosts'];
+    },
+    slugs() {
+      return this.$store.getters['posts/getSlugs'];
     },
   },
   methods: {
