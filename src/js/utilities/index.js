@@ -2,9 +2,15 @@ import axios from 'axios';
 import config from '../config';
 
 const axiosConfig = {
-  baseURL: config.apiEndpoint,
+  baseConfig: {
+    baseURL: config.apiBaseEndpoint,
+  },
+  config: {
+    baseURL: config.apiEndpoint,
+  },
 };
 
-const HTTP = axios.create(axiosConfig);
+const HTTP_BASE = axios.create(axiosConfig.baseConfig);
+const HTTP = axios.create(axiosConfig.config);
 
-export { HTTP };
+export { HTTP_BASE, HTTP };

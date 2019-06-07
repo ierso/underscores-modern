@@ -18,6 +18,9 @@ get_header();
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
+    <h1>Register</h1>
+    <v-register></v-register>
+
     <v-search></v-search>
 
     <v-test message="cool"></v-test>
