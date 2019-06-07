@@ -1,6 +1,7 @@
 <template>
   <div class="posts">
-    <h2>Posts</h2>
+    <h2>Page: {{query}}</h2>
+    <button v-on:click="goHome">Go Home</button>
     <ul class="posts__list">
       <li v-for="post in posts" :key="post.id">{{ post.title.rendered }}</li>
     </ul>
@@ -20,6 +21,7 @@ export default {
   },
   created() {
     this.fetchPosts();
+    console.log(this.$route);
   },
   computed: {
     posts() {
@@ -27,6 +29,9 @@ export default {
     },
     slugs() {
       return this.$store.getters['posts/getSlugs'];
+    },
+    query() {
+      return this.$route.name;
     },
   },
   methods: {
@@ -37,15 +42,23 @@ export default {
         page: this.page,
       });
     },
+    goHome: function() {
+      this.$router.push({
+        path: '/',
+        query: { plan: 'private' },
+        name: 'EXAMPLE',
+        params: { userId: '123' },
+      });
+    },
   },
 };
 </script>
 
 <style>
-.example {
-  color: teal;
+.posts {
+  color: hotpink;
 }
 .posts__list {
-  border: red solid 1px;
+  border: lightgreen solid 1px;
 }
 </style>

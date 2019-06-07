@@ -1,5 +1,8 @@
 <template>
-  <div class="example">{{ welcome }} {{ message }}</div>
+  <div>
+    <div class="example">{{ welcome }} {{ message }}</div>
+    <a href="/sample-page">Go to Sample Page</a>
+  </div>
 </template>
 
 <script>
@@ -9,6 +12,9 @@ export default {
     return {
       welcome: 'hello',
     };
+  },
+  created() {
+    console.log(this.$route);
   },
 };
 </script>

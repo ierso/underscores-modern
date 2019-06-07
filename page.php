@@ -20,10 +20,11 @@ get_header();
 
     <v-search></v-search>
 
-    <v-posts></v-posts>
-    data
     <v-test message="cool"></v-test>
 
+    <h1>ROUTER BELOW</h1>
+    <router-view></router-view>
+    <h1>ROUTER ABOVE</h1>
 		<?php
 		while ( have_posts() ) :
 			the_post();
