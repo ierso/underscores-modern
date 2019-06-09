@@ -6,6 +6,7 @@
       <button type="submit">Submit</button>
     </form>
     <div class="search__results">
+      <p>Search Results</p>
       <ul v-show="searchResults.length > 0" class="search__list">
         <li v-for="result in searchResults" :key="result.id">
           <h3>{{ result.title.rendered }}</h3>

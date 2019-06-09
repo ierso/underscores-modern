@@ -18,17 +18,11 @@ get_header();
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
-    <h1>Register</h1>
-    <v-register></v-register>
-
-    <v-search></v-search>
-
-    <v-test message="cool"></v-test>
-
     <h1>ROUTER BELOW</h1>
     <router-view></router-view>
     <h1>ROUTER ABOVE</h1>
-		<?php
+    <?php
+    /*
 		while ( have_posts() ) :
 			the_post();
 
@@ -39,12 +33,15 @@ get_header();
 				comments_template();
 			endif;
 
-		endwhile; // End of the loop.
+    endwhile; // End of the loop.
+    */
 		?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
 <?php
+/*
 get_sidebar();
+*/
 get_footer();
