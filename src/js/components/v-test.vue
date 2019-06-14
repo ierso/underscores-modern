@@ -16,11 +16,14 @@
       </li>
     </ul>
     <button v-on:click="checkLoggedIn()">Check Login</button>
+    <v-search></v-search>
   </div>
 </template>
 
 <script>
+import vSearch from './v-search.vue';
 export default {
+  components: { vSearch },
   props: ['message'],
   data() {
     return {
