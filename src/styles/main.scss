@@ -1,19 +1,17 @@
-@charset 'UTF-8';
-
-// 1. Configuration and helpers
+// 1. Abstracts - handles function, mixins, and variables
 @import 'abstracts/variables', 'abstracts/functions', 'abstracts/mixins';
 
-// 2. Vendors
+// 2. Vendors - handles 3rd party css
 @import 'vendor/normalize';
 
-// 3. Base stuff
+// 3. Base - animations, base, typography, and utilies.
 @import 'base/base', 'base/fonts', 'base/typography', 'base/helpers';
 
-// 4. Layout-related sections
+// 4. Layout - header, footer, grid, navigation
 @import 'layout/header', 'layout/footer';
 
-// 5. Components
+// 5. Components - buttons, navbars, cards, anything that is reusable
 // @import 'components/';
 
-// 6. Page-specific styles
+// 6. Page - specific styles per page
 @import 'pages/home';
