@@ -1,0 +1,25 @@
+// Is-invisible
+// ------------
+// Makes element invisible, but still accessible
+// - http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+@mixin is-invisible {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+// Is-visible
+// ----------
+// Turns off the element-invisible effect.
+@mixin is-visible {
+  position: static;
+  width: auto;
+  height: auto;
+  overflow: auto;
+  clip: auto;
+}

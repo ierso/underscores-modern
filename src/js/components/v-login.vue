@@ -1,10 +1,18 @@
 <template>
   <div>
     <h3>Login</h3>
-    <form class="form form__login" @submit.prevent="submit">
-      <input type="text" required v-model="username" placeholder="username">
-      <input type="password" required v-model="password" placeholder="password">
-      <button type="submit">Submit</button>
+    <form class="c-form c-form--login" @submit.prevent="submit">
+      <div class="c-form__row">
+        <div class="c-form__item">
+          <input type="text" required v-model="username" placeholder="username">
+        </div>
+        <div class="c-form__item">
+          <input type="password" required v-model="password" placeholder="password">
+        </div>
+      </div>
+      <div class="c-form__row">
+        <button class="o-button c-form__button" type="submit">Submit</button>
+      </div>
     </form>
   </div>
 </template>
@@ -35,9 +43,3 @@ export default {
   },
 };
 </script>
-
-<style>
-.form__login {
-  border: hotpink solid 2px;
-}
-</style>
