@@ -1,16 +1,32 @@
-.c-form {
-  &--login {
-    border: hotpink solid 2px;
-    max-width: 400px;
-  }
-  &__row {
-    margin-bottom: 1rem;
-    display: flex;
-  }
-  &__item {
-    width: 50%;
-    &:nth-child(2) {
-      margin-left: 1rem;
-    }
-  }
+.form--login {
+  border: hotpink solid 2px;
+  max-width: 400px;
+}
+
+.form--register {
+  border: teal solid 2px;
+  max-width: 400px;
+}
+
+.form__row {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.form__row--last { 
+  margin-bottom: 0; 
+}
+
+.form__item {
+  margin-right: 1rem;
+  width: 50%;
+}
+
+.form__item--full {
+  margin-right: 0;
+  width: 100%;
+}
+
+.form__item--last {
+  margin-right: 0;
 }

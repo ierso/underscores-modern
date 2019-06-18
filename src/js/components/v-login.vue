@@ -1,17 +1,25 @@
 <template>
   <div>
-    <h3>Login</h3>
-    <form class="c-form c-form--login" @submit.prevent="submit">
-      <div class="c-form__row">
-        <div class="c-form__item">
+    <form class="form form--login" @submit.prevent="submit">
+      <h1>Login</h1>
+      <h2>hello</h2>
+      <h3>hello</h3>
+      <h4>hello</h4>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde optio modi, quasi
+        earum placeat veritatis maxime, architecto iusto molestiae eos aliquid, animi quas.
+        Porro at magni odio sunt. Eligendi, harum!
+      </p>
+      <div class="form__row">
+        <div class="form__item">
           <input type="text" required v-model="username" placeholder="username">
         </div>
-        <div class="c-form__item">
+        <div class="form__item form__item--last">
           <input type="password" required v-model="password" placeholder="password">
         </div>
       </div>
-      <div class="c-form__row">
-        <button class="o-button c-form__button" type="submit">Submit</button>
+      <div class="form__row form__row--last">
+        <button class="o-button form__button" type="submit">Submit</button>
       </div>
     </form>
   </div>
