@@ -1,10 +1,7 @@
 <template>
   <div>
     <form class="form form--login" @submit.prevent="submit">
-      <h1>Login</h1>
-      <h2>hello</h2>
-      <h3>hello</h3>
-      <h4>hello</h4>
+      <h3>Login</h3>
       <p>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde optio modi, quasi
         earum placeat veritatis maxime, architecto iusto molestiae eos aliquid, animi quas.
@@ -19,7 +16,7 @@
         </div>
       </div>
       <div class="form__row form__row--last">
-        <button class="o-button form__button" type="submit">Submit</button>
+        <button class="button form__button" type="submit">Submit</button>
       </div>
     </form>
   </div>

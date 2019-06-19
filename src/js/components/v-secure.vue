@@ -1,5 +1,5 @@
 <template>
   <div>
-    <h1>This page is protected by auth</h1>
+    <h4>This page is protected by auth</h4>
   </div>
 </template>

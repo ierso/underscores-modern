@@ -1,6 +1,5 @@
 <template>
   <div>
-    <div class="example">{{ welcome }} {{ message }}</div>
     <ul>
       <li>
         <a href="/sample-page">Go to Sample Page</a>
@@ -24,12 +23,6 @@
 import vSearch from './v-search.vue';
 export default {
   components: { vSearch },
-  props: ['message'],
-  data() {
-    return {
-      welcome: 'hello',
-    };
-  },
   created() {
     console.log(this.$route);
   },

@@ -3,7 +3,7 @@
     <h2>Search</h2>
     <form @submit.prevent="handleSubmit">
       <input type="text" v-model="searchInput">
-      <button type="submit">Submit</button>
+      <button type="submit" class="button">Submit</button>
     </form>
     <div class="search__results">
       <p>Search Results</p>

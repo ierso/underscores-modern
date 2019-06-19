@@ -26,8 +26,8 @@
 
   <div id="app">
 
-    <header id="masthead" class="site-header">
+    <header id="masthead" class="header">
     
     </header>
 
-    <div id="content" class="site-content">
+    <div id="content" class="content">

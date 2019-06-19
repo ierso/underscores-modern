@@ -1,8 +1,8 @@
 const path = require('path');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
+const { developmentURL, port } = require('./config');
 
-const { developmentURL } = require('./config');
 const filesToWatch = ['./*.php', './dist/*.js', './dist/*.css'];
 
 module.exports = {
@@ -43,9 +43,12 @@ module.exports = {
     new VueLoaderPlugin(),
     new BrowserSyncPlugin({
       host: 'localhost',
-      port: 3000,
+      port: port,
       files: filesToWatch,
       proxy: developmentURL,
     }),
   ],
+  performance: {
+    hints: false,
+  },
 };

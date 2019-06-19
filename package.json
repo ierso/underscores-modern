@@ -7,7 +7,7 @@
     "start": "concurrently \"npm run sass:watch\" \"npm run dev\"",
     "build": "concurrently \"npm run sass:compile\" \"npm run production\"",
     "dev": "webpack --watch --mode=development",
-    "production": "webpack --watch --mode=production",
+    "production": "webpack --mode=production",
     "sass:watch": "nodemon -e scss -x \"npm run sass:compile\"",
     "sass:compile": "node-sass src/styles -o dist --output-style compressed"
   },
