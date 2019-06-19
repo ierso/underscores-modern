@@ -1,25 +1,23 @@
 <template>
-  <div>
+  <form class="form form--register" @submit.prevent="submit">
     <h3>Register</h3>
-    <form class="form form--register" @submit.prevent="submit">
-      <div class="form__row">
-        <div class="form__item">
-          <input type="text" required v-model="username" placeholder="username">
-        </div>
-        <div class="form__item form__item--last">
-          <input type="email" required v-model="email" placeholder="email">
-        </div>
+    <div class="form__row">
+      <div class="form__item">
+        <input type="text" required v-model="username" placeholder="username">
       </div>
-      <div class="form__row">
-        <div class="form__item form__item--full">
-          <input type="password" required v-model="password" placeholder="password">
-        </div>
+      <div class="form__item form__item--last">
+        <input type="email" required v-model="email" placeholder="email">
       </div>
-      <div class="form__row form__row--last">
-        <button class="button form__button" type="submit">Submit</button>
+    </div>
+    <div class="form__row">
+      <div class="form__item form__item--full">
+        <input type="password" required v-model="password" placeholder="password">
       </div>
-    </form>
-  </div>
+    </div>
+    <div class="form__row form__row--last">
+      <button class="button form__button" type="submit">Submit</button>
+    </div>
+  </form>
 </template>
 
 

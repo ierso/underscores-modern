@@ -9,23 +9,23 @@ const Foo = { template: '<div>foo</div>' };
 
 let routes = [
   { path: '/', component: components.vTest },
-  {
-    path: '/sample-page',
-    component: components.vPosts,
-    name: 'sample-page',
-    // Method to handle authentication
-    beforeEnter: (to, from, next) => {
-      const answer = window.confirm(
-        'Do you really want to leave? you have unsaved changes!'
-      );
-      if (answer) {
-        next();
-      } else {
-        // You can reroute to wherever you'd like. For example: Register / Login
-        next('/');
-      }
-    },
-  },
+  // {
+  //   path: '/sample-page',
+  //   component: components.vPosts,
+  //   name: 'sample-page',
+  //   // Method to handle authentication
+  //   beforeEnter: (to, from, next) => {
+  //     const answer = window.confirm(
+  //       'Do you really want to leave? you have unsaved changes!'
+  //     );
+  //     if (answer) {
+  //       next();
+  //     } else {
+  //       // You can reroute to wherever you'd like. For example: Register / Login
+  //       next('/');
+  //     }
+  //   },
+  // },
   {
     path: '/login',
     component: components.vLogin,
@@ -46,6 +46,7 @@ let routes = [
 ];
 
 const router = new VueRouter({
+  base: '',
   routes: routes,
   mode: 'history',
 });
