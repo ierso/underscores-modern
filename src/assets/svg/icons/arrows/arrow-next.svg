@@ -1,0 +1,10 @@
+<svg class="ml-auto" width="41px" height="68px" viewBox="0 0 41 68" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g transform="translate(-1362.000000, -430.000000)" stroke="#65B8DE" stroke-width="10">
+      <g transform="translate(1366.000000, 434.000000)">
+        <path d="M0,0 L33.3457031,32.8027344" id="Path-3"></path>
+        <path d="M0,27 L33.3457031,59.8027344" id="Path-3" transform="translate(16.672852, 43.401367) rotate(-270.000000) translate(-16.672852, -43.401367) "></path>
+      </g>
+    </g>
+  </g>
+</svg>

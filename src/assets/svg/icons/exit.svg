@@ -1,0 +1,14 @@
+
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+  class="transition-opacity transition-medium hover:opacity-50">
+  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g transform="translate(-15.000000, -34.000000)" stroke="#FFFFFF" stroke-width="3">
+      <g transform="translate(16.000000, 20.000000)">
+        <g transform="translate(0.000000, 15.245565)">
+          <path d="M-4,11.7544352 L26.4472656,11.7544352" id="Path-4" transform="translate(11.223633, 11.754435) rotate(315.000000) translate(-11.223633, -11.754435) "></path>
+          <path d="M-3.79101562,11.5 L26.6562504,11.5" id="Path-4-Copy" transform="translate(11.432617, 11.500000) rotate(45.000000) translate(-11.432617, -11.500000) "></path>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

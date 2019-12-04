@@ -153,6 +153,17 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 }
 
 /**
+ * Utility Functions
+ */
+require get_template_directory() . '/inc/utility-functions.php';
+
+/**
  * Disable Gutenberg editor
  */
 add_filter('use_block_editor_for_post', '__return_false');
+
+/**
+ * Modify default WordPress functionality
+ */
+
+add_filter('image_send_to_editor','switch_to_relative_url', 10, 8);

@@ -1,4 +1,4 @@
 module.exports = {
-  developmentURL: 'http://vagrant.host',
+  developmentURL: 'site.test',
   port: 3000,
 };

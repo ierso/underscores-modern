@@ -20,14 +20,7 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
-
-<div id="page" class="site">
-
-  <div id="app">
-
-    <header id="masthead" class="header">
+<body class="font-body antialiased xl:overflow-auto">
+  <div id="page" class="site">
+    <div id="app">
     
-    </header>
-
-    <div id="content" class="content">

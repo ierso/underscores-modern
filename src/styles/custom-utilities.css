@@ -1,0 +1,207 @@
+.transition-bg {
+  transition-property: background;
+}
+
+.transition-height {
+  transition-property: height;
+}
+
+.transition-opacity {
+  transition-property: opacity;
+}
+
+.transition-shadow {
+  transition-property: box-shadow;
+}
+
+.transition-fastest {
+  transition-duration: 50ms;
+}
+
+.transition-faster {
+  transition-duration: 100ms;
+}
+
+.transition-fast {
+  transition-duration: 150ms;
+}
+
+.transition-medium {
+  transition-duration: 200ms;
+}
+
+.transition-slow {
+  transition-duration: 250ms;
+}
+
+.transition-slower {
+  transition-duration: 300ms;
+}
+
+.transition-slowest {
+  transition-duration: 500ms;
+}
+
+.ease {
+  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.ease-in {
+  transition-timing-function: cubic-bezier(0.42, 0, 1, 1);
+}
+
+.ease-out {
+  transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+}
+
+.ease-in-out {
+  transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.linear {
+  transition-timing-function: cubic-bezier(0, 0, 1, 1);
+}
+
+.indent-sm {
+  text-indent: 1.25rem;
+}
+
+.indent-md {
+  text-indent: 1.5rem;
+}
+
+.indent-lg {
+  text-indent: 1.75rem;
+}
+
+.checkbox-label:after,
+.checkbox-label:before {
+  content: '';
+  width: calc(1rem + 2px);
+  height: calc(1rem + 2px);
+  border-radius: 2px;
+  border: 2px solid transparent;
+  background-color: transparent;
+  @apply block absolute left-0 z-0 top-0;
+}
+
+.checkbox-label:before {
+  border-color: black;
+}
+
+.checkbox-label:after {
+  transform: scale(0.5);
+}
+
+.checkbox-label--white:before {
+  border-color: #ffffff;
+}
+
+.checkbox-input:checked ~ .checkbox-state .checkbox-label:after {
+  @apply bg-gray !important;
+}
+
+.checkbox-input:checked ~ .checkbox-state .checkbox-label--white:after {
+  @apply bg-white !important;
+}
+
+.radio:before {
+  @apply rounded-full;
+}
+
+.radio:after {
+  @apply rounded-full;
+}
+
+.hover-shadow {
+  @apply transition-shadow transition-medium ease;
+}
+
+.before-nav:before,
+.before-nav:after {
+  content: '';
+  @apply block flex-shrink flex-grow;
+}
+
+@responsive {
+  .before-nav-bg:before {
+    @apply bg-transparentGray;
+  }
+}
+
+@responsive {
+  .before-nav-bg-search:before {
+    @apply bg-searchGray;
+  }
+}
+
+.after-nav-bg:after {
+  @apply bg-lightBlue;
+}
+
+.b-logo-h {
+  height: 44px;
+}
+
+@media (min-width: 375px) {
+  .b-logo-w {
+    width: 120px;
+  }
+}
+
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spinner:before {
+  content: '';
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  margin-left: -10px;
+  border-radius: 50%;
+  border: 2px solid rgb(0, 0, 0, 0);
+  border-top-color: #fff;
+  animation: spinner 0.6s linear infinite;
+}
+
+.outline-disabled:focus {
+  outline: 0;
+}
+
+.slick-dots {
+  @apply flex justify-center m-0 py-4 list-none;
+}
+
+.slick-dots li {
+  @apply my-0 mx-1;
+}
+
+.slick-dots button {
+  @apply block p-0 bg-midGray border-0 w-4 h-4 rounded-full outline-none;
+  text-indent: -9999px;
+}
+
+.slick-dots li.slick-active button {
+  @apply bg-lightBlue;
+}
+
+.h-max-294 {
+  max-height: 18.375rem;
+}
+
+.h-min-35 {
+  min-height: 35rem;
+}
+
+@responsive {
+  .h-min-55 {
+    min-height: 55rem;
+  }
+}

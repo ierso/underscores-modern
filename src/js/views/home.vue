@@ -1,13 +1,16 @@
 <template>
   <div>
-    <h1>test</h1>
+    <h1>home view</h1>
   </div>
 </template>
 
 <script>
 export default {
+  name: 'home',
   components: {},
-  created() {},
-  methods: {},
+
+  data() {
+    return {};
+  },
 };
 </script>
